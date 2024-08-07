@@ -1,0 +1,32 @@
+void initiateHigh(){
+  
+  digitalWrite(RELAY_HIGHBEAM_PIN, HIGH);
+  digitalWrite(RELAY_LOWBEAM_PIN, HIGH);
+  digitalWrite(RELAY_LEFTSIGNAL_PIN, HIGH);
+  digitalWrite(RELAY_RIGHTSIGNAL_PIN, HIGH);
+  digitalWrite(RELAY_HORN_PIN, HIGH);
+  digitalWrite(RELAY_UPMOTOR_PIN, HIGH);
+  digitalWrite(RELAY_DOWNMOTOR_PIN, HIGH);
+
+}
+
+void setupPin(){
+  pinMode(HIGHBEAM_PIN, INPUT);
+  pinMode(UPMOTOR_PIN, INPUT);
+  pinMode(DOWNMOTOR_PIN, INPUT);
+  pinMode(RIGHT_SEIN_PIN, INPUT);
+  pinMode(LEFT_SEIN_PIN, INPUT);
+  pinMode(HORN_PIN, INPUT);
+  pinMode(KEYCONTACT_PIN, INPUT);
+  pinMode(MOTORSENSOR_PIN, INPUT);
+
+  pinMode(RELAY_HIGHBEAM_PIN, OUTPUT);
+  pinMode(RELAY_LOWBEAM_PIN, OUTPUT);
+  pinMode(RELAY_LEFTSIGNAL_PIN, OUTPUT);
+  pinMode(RELAY_RIGHTSIGNAL_PIN, OUTPUT);
+  pinMode(RELAY_HORN_PIN, OUTPUT);
+  pinMode(RELAY_UPMOTOR_PIN, OUTPUT);
+  pinMode(RELAY_DOWNMOTOR_PIN, OUTPUT);
+
+}
+
